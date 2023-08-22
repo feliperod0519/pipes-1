@@ -4,10 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { ShortenPipe } from './shorten.pipe';
+import { FilterPipe } from './filter.pipe';
+
+import { DropDownDirective } from './dropdown.directive';
+import { ttClassDirective } from './ttClass.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShortenPipe,
+    FilterPipe,
+    DropDownDirective,
+    ttClassDirective
   ],
   imports: [
     BrowserModule,
